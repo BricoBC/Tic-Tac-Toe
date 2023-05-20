@@ -18,7 +18,7 @@ def winner():
             is_win_player.append(i)
     is_win_machine.sort()
     is_win_player.sort()
-    for i in range(len(win)+1):
+    for i in range(len(win)):
         if contador == len(arr):
             print("Quedaron empatados")
             sys.exit()
@@ -28,6 +28,8 @@ def winner():
         if win[i] == is_win_player:
             print("The winner is the player")
             sys.exit()
+
+        # print(f'Number: {i}')
         
     
 
